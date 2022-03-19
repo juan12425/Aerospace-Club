@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav{
+    display: flex;
+    background: black;
+    min-height: 4rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul{
+    
+    display: grid;
+    grid-template-columns: 4fr repeat(3, 1fr);
+    width: 100%;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+nav li{
+    color: white;
+    display: inline-block;
+
+}
+
+.clubname{
+    justify-self: stretch;
+    font-size: 2rem;
+   
+}
+
+
+nav span{
+    margin-left: 4%;
+    font-family: 'Hurricane', cursive;
+   
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(95, 167, 226);
+}
+
+main{
+    display: grid; 
+    grid-template: 500px repeat(3, 1fr) / repeat(4, 1fr);
+    grid-template-areas: "header header header header"
+    "rocket rocket text text";
+    margin-top: 4rem;
+    row-gap: 10px;
+}
+
+.banner{
+    grid-area: header;
+    width: 100%;
+    background-image: url("images/spacex-YSvUYqf9Mjk-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.companytext{
+    color: white;
+    font-family: 'Hurricane', cursive;
+    font-size: 5rem;
+    width: 100%;
+    text-align: center;
+    background: black;
+}
+
+.rocketdiv{
+    grid-area: rocket;
+
+}
+.rocketdiv img{
+    max-width: 80%;
+    display: block;
+    height: auto;
+    margin: 0 auto;
+}
+
+.rockettextdiv{
+    grid-area: text;
+    background:rgb(95, 167, 226);
+
+}
+
+.rockettextdiv h1{
+    font-size: 2.1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+.rockettextdiv h2{
+    display: block;
+    background: blue;
+
+}

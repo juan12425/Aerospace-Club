@@ -98,19 +98,25 @@ main{
 
 .rockettextdiv{
     grid-area: text;
-    background:rgb(95, 167, 226);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
+
+
 .rockettextdiv h1{
-    font-size: 2.1rem;
+    font-size: 2.5rem;
     text-align: center;
     margin-top: 1rem;
 }
 
 
 .rockettextdiv h2{
-    display: block;
-    background: blue;
+    width: 90%;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
 
 }

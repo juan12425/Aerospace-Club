@@ -90,7 +90,7 @@ main{
 
 }
 .rocketdiv img{
-    max-width: 80%;
+    width: 80%;
     display: block;
     height: auto;
     margin: 0 auto;
@@ -99,9 +99,10 @@ main{
 .rockettextdiv{
     grid-area: text;
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: center;
-
+    flex-wrap: wrap;
+    row-gap: 1rem;
 }
 
 
@@ -113,10 +114,20 @@ main{
 }
 
 
-.rockettextdiv h2{
-    width: 90%;
+
+.quote{
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
+    width: 90%;
+
+
+}
+
+.name{
+    font-size: 2rem;
+ 
+    width: 90%;
+    font-family: 'Hurricane', cursive;
 
 }

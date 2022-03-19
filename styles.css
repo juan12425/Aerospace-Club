@@ -88,6 +88,8 @@ main{
 
 .rocketdiv{
     grid-area: rocket;
+    display: flex;
+    align-items: center;
 
 }
 .rocketdiv img{
@@ -144,7 +146,7 @@ main{
 
 .location1, .location2{
     display: flex;
-    align-items: center;
+    align-content: space-evenly;
     justify-content: center;
     background: rgba(224, 224, 224, 0.199);
     flex-wrap: wrap;
@@ -162,3 +164,47 @@ main{
     text-align: center;
     font-size: 2.5rem;
 }
+
+@media only screen and (max-width: 768px)
+{
+
+    
+    main{
+        grid-template: 500px repeat(3, 600px) / repeat(4, 1fr);
+        grid-template-areas: 
+        "header header header header"
+        "rocket rocket text text"
+        "location1 location1 location1 location1"
+        "location2 location2 location2 location2";
+    }
+
+    .quote{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 510px)
+{
+    main{
+        display: grid; 
+        grid-template: 500px 400px repeat(3, 600px) / repeat(4, 1fr);
+        grid-template-areas: "header header header header"
+        "text text text text"
+        "rocket rocket rocket rocket"
+        "location1 location1 location1 location1"
+        "location2 location2 location2 location2";
+        row-gap: 10px;
+    }
+
+    .clubname{
+        display: none;
+    }
+
+    nav ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .banner{
+        background-image: url("images/bill-jelen-NVWyN8GamCk-unsplash.jpg");
+    }
+} 
